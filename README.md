@@ -13,5 +13,4 @@ LinkedIn:- www.linkedin.com/in/rohitj264
 
 <details>
            <summary>Task 01 <br> Implementation of sum of numbers from 1 to n using both c program and riscv command </summary>
-           <p>Implementation of sum of numbers from 1 to n using both c program and riscv command</p>
 </details>
