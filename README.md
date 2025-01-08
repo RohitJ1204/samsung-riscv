@@ -1,6 +1,6 @@
 # SAMSUNG RISC-V
 
-Samsung riscv talent development program 2024
+RISC-V Talent Development Program, powered by Samsung Semiconductor India Research (SSIR) along with VLSI System Design (VSD)
 
 ## Basic Details
 **Name:** Rohit J  
