@@ -34,5 +34,24 @@ In order to achieve the best possible performance and assemble code -O1 is your 
 > * Spike is a free, open-source C++ simulator for the RISC-V ISA that models a RISC-V core and cache system. It can be used to run programs and a Linux kernel, and can be a starting point for running software on a RISC-V target.  
 ### What is pk (Proxy Kernel)?  
 > * The RISC-V Proxy Kernel, pk , is a lightweight application execution environment that can host statically-linked RISC-V ELF binaries.  
-> * A Proxy Kernel in the RISC-V ecosystem simplifies the interaction between complex hardware and the software running on it, making it easier to manage, test, and develop software and hardware projects.  
+> * A Proxy Kernel in the RISC-V ecosystem simplifies the interaction between complex hardware and the software running on it, making it easier to manage, test, and develop software and hardware projects.
+
+*C program which calculates sum of even numbers from 1 to n*
+```
+#include <stdio.h>
+
+int main()
+{
+    int i, sum=0,n=10;
+    for(i=2; i<=n; i+=2)
+    {
+	sum += i;
+    }
+
+    printf("Sum of all even number between 1 to %d = %d\n", n, sum);
+
+    return 0;
+}
+
+```  
 </details>
