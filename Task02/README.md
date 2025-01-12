@@ -1,11 +1,4 @@
-### What is SPIKE in RISCV?
-> * A RISC-V ISA is a simulator, enabling the testing and analysis of RISC-V programs without the need for actual hardware.  
-> * Spike is a free, open-source C++ simulator for the RISC-V ISA that models a RISC-V core and cache system. It can be used to run programs and a Linux kernel, and can be a starting point for running software on a RISC-V target.  
-### What is pk (Proxy Kernel)?  
-> * The RISC-V Proxy Kernel, pk , is a lightweight application execution environment that can host statically-linked RISC-V ELF binaries.  
-> * A Proxy Kernel in the RISC-V ecosystem simplifies the interaction between complex hardware and the software running on it, making it easier to manage, test, and develop software and hardware projects.
-
-*C program which calculates sum of even numbers from 1 to n*
+## C program which calculates sum of even numbers from 1 to n
 ```
 #include <stdio.h>
 
@@ -47,10 +40,17 @@ riscv64-unknown-elf-gcc -Ofast -mabi=lp64 -march=rv64i -o sum_1ton.o sum_1ton.c
 
 ### Assembly language code obtained for riscv-ofast command
 ![riscv-Ofast](https://github.com/RohitJ1204/samsung-riscv/blob/d9f0afde47c7cc3482a0cd4081ae4abddb0726f3/Task02/riscv-Ofast.png)
+
 ```
 spike pk sumeven2ton.c
 spike -d pk sumeven2ton.c
 ```
+### What is SPIKE in RISCV?
+> * A RISC-V ISA is a simulator, enabling the testing and analysis of RISC-V programs without the need for actual hardware.  
+> * Spike is a free, open-source C++ simulator for the RISC-V ISA that models a RISC-V core and cache system. It can be used to run programs and a Linux kernel, and can be a starting point for running software on a RISC-V target.  
+### What is pk (Proxy Kernel)?  
+> * The RISC-V Proxy Kernel, pk , is a lightweight application execution environment that can host statically-linked RISC-V ELF binaries.  
+> * A Proxy Kernel in the RISC-V ecosystem simplifies the interaction between complex hardware and the software running on it, making it easier to manage, test, and develop software and hardware projects.
 ### *Descriptions of the above command*  
 * **spike:** Runs the SPIKE RISC-V simulator. 
 * **pk:** Loads the proxy kernel to provide a minimal runtime environment. 
