@@ -16,14 +16,14 @@ int main()
 }
 
 ```
-### Compilation of C-Code using gcc command 
+## Compilation of C-Code using gcc command 
 ```
 gcc sumeven2ton.c
 ./a.out
 ```
 ![C Code compiled on gcc Compiler](https://github.com/RohitJ1204/samsung-riscv/blob/f04d62bffa18712242dd1848c9c17867f664fe6b/Task02/Command_terminal.png)
 
-### RISCV Command
+## RISCV Command
 ```
 riscv64-unknown-elf-gcc -O1 -mabi=lp64 -march=rv64i -o sum_1ton.o sum_1ton.c
 riscv64-unknown-elf-gcc -Ofast -mabi=lp64 -march=rv64i -o sum_1ton.o sum_1ton.c
@@ -58,3 +58,5 @@ spike -d pk sumeven2ton.c
 * **pk:** Loads the proxy kernel to provide a minimal runtime environment. 
 * **sumeven2ton:** The compiled RISC-V binary that calculates the sum of even numbers from 2 to 𝑛
 * **-d:** Enables debugging mode in SPIKE. It allows you to inspect the execution, set breakpoints, step through instructions, and view memory/registers.
+## Snapshot of output obtained by spike simulator
+![Spike_simulatoroutput](https://github.com/RohitJ1204/samsung-riscv/blob/f04d62bffa18712242dd1848c9c17867f664fe6b/Task02/Command_terminal.png)
