@@ -12,7 +12,7 @@ RISC-V Talent Development Program, powered by Samsung Semiconductor India Resear
 ----------------------------------------------------------------------------------------------------------------
 
 <details>
-<summary>Task 01: <br> Implementation of sum of numbers from 1 to n using both c program and riscv command </summary>
+<summary><b>Task 1:</b> Implementation of sum of numbers from 1 to n using both c program and riscv command</summary> 
            <br>                                                                                                                                                   <p>This task showcases a neat program developed in C-language that allows users to calculate the sum of integers at varying scales. The code itself can be executed via GCC syntax where you can generate the output via ./a.out.
 
 In addition, there is another version of the code available which uses RISC-V architecture, however this does implement two of its own optimization strategies which include: -O1 and -Ofast.<br> 
