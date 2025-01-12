@@ -14,7 +14,7 @@ RISC-V Talent Development Program, powered by Samsung Semiconductor India Resear
 <details>
 <summary><b>Task 1:</b> Implementation of sum of numbers from 1 to n using both c program and riscv command</summary> 
 
-[Task01](https://github.com/RohitJ1204/samsung-riscv/blob/main/Task01/task01.md)	
+[Task01](https://github.com/RohitJ1204/samsung-riscv/blob/c2bb5f03115f3a0da391fc65cb6e734e7940ccf9/Task01/task01.md)	
 
 </details>
 
