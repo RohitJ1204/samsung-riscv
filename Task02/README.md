@@ -16,7 +16,7 @@ int main()
 }
 
 ```
-### Compilation of C-Code using gcc command and riscv command
+### Compilation of C-Code using gcc command 
 ```
 gcc sumeven2ton.c
 ./a.out
@@ -41,6 +41,8 @@ riscv64-unknown-elf-gcc -Ofast -mabi=lp64 -march=rv64i -o sum_1ton.o sum_1ton.c
 ### Assembly language code obtained for riscv-ofast command
 ![riscv-Ofast](https://github.com/RohitJ1204/samsung-riscv/blob/d9f0afde47c7cc3482a0cd4081ae4abddb0726f3/Task02/riscv-Ofast.png)
 
+## Testing the SPIKE Simulator
+The target is to run the ```sumeven2ton.c``` code using both ```gcc compiler``` and ```riscv compiler```, and both of the compiler must display the same output on the terminal. So to compile the code using **riscv compiler**, use the following command:  
 ```
 spike pk sumeven2ton.c
 spike -d pk sumeven2ton.c
