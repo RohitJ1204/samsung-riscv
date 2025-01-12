@@ -85,5 +85,6 @@ spike -d pk sumeven2ton.c
 ### *Descriptions of the above command*  
 * **spike:** Runs the SPIKE RISC-V simulator. 
 * **pk:** Loads the proxy kernel to provide a minimal runtime environment. 
-* **sumeven2ton:** The compiled RISC-V binary that calculates the sum of even numbers from 2 to 𝑛 
+* **sumeven2ton:** The compiled RISC-V binary that calculates the sum of even numbers from 2 to 𝑛
+* **-d:** Enables debugging mode in SPIKE. It allows you to inspect the execution, set breakpoints, step through instructions, and view memory/registers.
 </details>
