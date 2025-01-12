@@ -60,3 +60,10 @@ spike -d pk sumeven2ton.c
 * **-d:** Enables debugging mode in SPIKE. It allows you to inspect the execution, set breakpoints, step through instructions, and view memory/registers.
 ## Snapshot of output obtained by spike simulator
 ![Spike_simulatoroutput](https://github.com/RohitJ1204/samsung-riscv/blob/f04d62bffa18712242dd1848c9c17867f664fe6b/Task02/Command_terminal.png)
+## Conclusion
+<p>
+	
+The output produced by both the GCC compiler and the RISC-V compiler is consistent, demonstrating the correctness of the compiled code across different platforms. In terms of optimization, the ```-O1``` optimization level generated 14 lines of assembly language code, while the <br>```-Ofast``` optimization level reduced this to 12 lines. This highlights the efficiency of the ```-Ofast``` optimization in minimizing assembly code length, which can lead to better performance and resource utilization.
+</p>
+
+ 
