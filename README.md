@@ -42,7 +42,7 @@ In order to achieve the best possible performance and assemble code -O1 is your 
 
 int main()
 {
-    int i, sum=0,n=10;
+    int i, sum=0,n=100;
     for(i=2; i<=n; i+=2)
     {
 	sum += i;
