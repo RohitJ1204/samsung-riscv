@@ -78,4 +78,12 @@ riscv64-unknown-elf-gcc -Ofast -mabi=lp64 -march=rv64i -o sum_1ton.o sum_1ton.c
 
 ### Assembly language code obtained for riscv-ofast command
 ![riscv-Ofast](https://github.com/RohitJ1204/samsung-riscv/blob/d9f0afde47c7cc3482a0cd4081ae4abddb0726f3/Task02/riscv-Ofast.png)
+```
+spike pk sumeven2ton.c
+spike -d pk sumeven2ton.c
+```
+### *Descriptions of the above command*  
+* **spike:** Runs the SPIKE RISC-V simulator. 
+* **pk:** Loads the proxy kernel to provide a minimal runtime environment. 
+* **sumeven2ton:** The compiled RISC-V binary that calculates the sum of even numbers from 2 to 𝑛 
 </details>
