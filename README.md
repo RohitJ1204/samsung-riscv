@@ -56,7 +56,7 @@ int main()
 ```
 ### Compilation of C-Code using gcc command and riscv command
 ```
-gcc sum_1ton.c
+gcc sumeven2ton.c
 ./a.out
 ```
 ![C Code compiled on gcc Compiler](https://github.com/RohitJ1204/samsung-riscv/blob/f04d62bffa18712242dd1848c9c17867f664fe6b/Task02/Command_terminal.png)
