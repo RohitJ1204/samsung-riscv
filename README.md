@@ -29,7 +29,7 @@ RISC-V Talent Development Program, powered by Samsung Semiconductor India Resear
 ----------------------------------------------------------------------------------------------------------------
 
 <details>
-<summary> <b>Task 3:</b> Basics Of RISCV instructions and its exact 32 instraction code(for objdump file of previous task)</summary> 
+<summary> <b>Task 3:</b> Basics Of RISCV instructions and its exact 32 instruction code(for objdump file of previous task)</summary> 
 
 [Task02](https://github.com/RohitJ1204/samsung-riscv/tree/main/Task03#readme)	
 </details>
