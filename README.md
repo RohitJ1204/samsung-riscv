@@ -23,7 +23,7 @@ RISC-V Talent Development Program, powered by Samsung Semiconductor India Resear
 <details>
 <summary> <b>Task 2:</b> Performing SPIKE Simulation and Debugging the C code with Interactive Debugging Mode using Spike</summary> 
 
-[Task03](https://github.com/RohitJ1204/samsung-riscv/tree/main/Task02#readme)	
+[Task02](https://github.com/RohitJ1204/samsung-riscv/tree/main/Task02#readme)	
 </details>
 
 ----------------------------------------------------------------------------------------------------------------
@@ -31,7 +31,7 @@ RISC-V Talent Development Program, powered by Samsung Semiconductor India Resear
 <details>
 <summary> <b>Task 3:</b> Basics Of RISCV instructions and its exact 32 instruction code(for objdump file of previous task)</summary> 
 
-[Task02](https://github.com/RohitJ1204/samsung-riscv/tree/main/Task03#readme)	
+[Task03](https://github.com/RohitJ1204/samsung-riscv/tree/main/Task03#readme)	
 </details>
 
 ----------------------------------------------------------------------------------------------------------------
