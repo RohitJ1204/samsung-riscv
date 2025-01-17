@@ -47,14 +47,14 @@ The RISC-V instructions are categorized into types based on their field organiza
    - **rd**: `sp` (`x2`)
    - **Immediate**: `-16` (`0xFFF0`)
    - **Machine Code**: `ff010113`
-![addi sp, sp, -16](https://github.com/RohitJ1204/samsung-riscv/blob/7b140a1b166f30da455329a0394e4d38db4d181d/Task03/Screenshot%20from%202025-01-17%2020-20-55.png)
+![addi sp, sp, -16](https://github.com/RohitJ1204/samsung-riscv/blob/afc3dfd1d99219cfdddea8f3b042bcfc90ad05c0/Task03/Instruction1.png)
 #### 2. **Instruction: `sd ra, 8(sp)`**
    - **Opcode**: `0100011` (S-type format)
    - **rs1**: `sp` (`x2`)
    - **rs2**: `ra` (`x1`)
    - **Immediate**: `8`
    - **Machine Code**: `00113423`
-
+![sd ra, 8(sp)](https://github.com/RohitJ1204/samsung-riscv/blob/afc3dfd1d99219cfdddea8f3b042bcfc90ad05c0/Task03/Instruction1.png)
 #### 3. **Instruction: `li a5, 50`**
    - Combines `lui` and `addi`.
    - **Machine Code**: `03200793`
