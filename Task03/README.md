@@ -54,60 +54,60 @@ The RISC-V instructions are categorized into types based on their field organiza
    - **rs2**: `ra` (`x1`)
    - **Immediate**: `8`
    - **Machine Code**: `00113423`
-![sd ra, 8(sp)](https://github.com/RohitJ1204/samsung-riscv/blob/afc3dfd1d99219cfdddea8f3b042bcfc90ad05c0/Task03/Instruction1.png)
+![sd ra, 8(sp)](https://github.com/RohitJ1204/samsung-riscv/blob/bbbb74529401a022fe2fb028525a953a2d509fe5/Task03/Instruction2.png)
 #### 3. **Instruction: `li a5, 50`**
    - Combines `lui` and `addi`.
    - **Machine Code**: `03200793`
-
+![li a5, 50](https://github.com/RohitJ1204/samsung-riscv/blob/bbbb74529401a022fe2fb028525a953a2d509fe5/Task03/Instruction3.png)
 #### 4. **Instruction: `addiw a5, a5, -1`**
    - **Opcode**: `0011011` (I-type format)
    - **rs1**: `a5` (`x15`)
    - **rd**: `a5` (`x15`)
    - **Immediate**: `-1` (`0xFFFFFFFF`)
    - **Machine Code**: `fff7879b`
-
+![addiw a5, a5, -1](https://github.com/RohitJ1204/samsung-riscv/blob/bbbb74529401a022fe2fb028525a953a2d509fe5/Task03/Instruction4.png)
 #### 5. **Instruction: `bnez a5, 10190`**
    - Combines branch operation (`beq`) with zero comparison.
    - **Machine Code**: `fe079ee3`
-
+![bnez a5, 10190](https://github.com/RohitJ1204/samsung-riscv/blob/bbbb74529401a022fe2fb028525a953a2d509fe5/Task03/Instruction5.png)
 #### 6. **Instruction: `lui a2, 0x1`**
    - **Opcode**: `0110111` (U-type format)
    - **rd**: `a2` (`x12`)
    - **Immediate**: `0x1`
    - **Machine Code**: `00001637`
-
+![lui a2, 0x1](https://github.com/RohitJ1204/samsung-riscv/blob/bbbb74529401a022fe2fb028525a953a2d509fe5/Task03/Instruction6.png)
 #### 7. **Instruction: `addi a2, a2, -1546`**
    - **Opcode**: `0010011` (I-type format)
    - **rs1**: `a2` (`x12`)
    - **rd**: `a2` (`x12`)
    - **Immediate**: `-1546` (`0xFFFFF9EA`)
    - **Machine Code**: `9f660613`
-
+![addi a2, a2, -1546](https://github.com/RohitJ1204/samsung-riscv/blob/bbbb74529401a022fe2fb028525a953a2d509fe5/Task03/Instruction7.png)
 #### 8. **Instruction: `li a1, 100`**
    - Combines `lui` and `addi`.
    - **Machine Code**: `06400593`
-
+![li a1, 100](https://github.com/RohitJ1204/samsung-riscv/blob/bbbb74529401a022fe2fb028525a953a2d509fe5/Task03/Instruction8.png)
 #### 9. **Instruction: `lui a0, 0x21`**
    - **Machine Code**: `00021537`
-
+![lui a0, 0x21)](https://github.com/RohitJ1204/samsung-riscv/blob/bbbb74529401a022fe2fb028525a953a2d509fe5/Task03/Instruction9.png)
 #### 10. **Instruction: `addi a0, a0, 400`**
     - **Machine Code**: `19050513`
-
+![addi a0, a0, 400](https://github.com/RohitJ1204/samsung-riscv/blob/bbbb74529401a022fe2fb028525a953a2d509fe5/Task03/Instruction10.png)
 #### 11. **Instruction: `jal ra, 10418`**
     - **Machine Code**: `26c000ef`
-
+![jal ra, 10418](https://github.com/RohitJ1204/samsung-riscv/blob/bbbb74529401a022fe2fb028525a953a2d509fe5/Task03/Instruction11.png)
 #### 12. **Instruction: `li a0, 0`**
     - **Machine Code**: `00000513`
-
+![li a0, 0](https://github.com/RohitJ1204/samsung-riscv/blob/bbbb74529401a022fe2fb028525a953a2d509fe5/Task03/Instruction12.png)
 #### 13. **Instruction: `ld ra, 8(sp)`**
     - **Machine Code**: `00813083`
-
+![ld ra, 8(sp)](https://github.com/RohitJ1204/samsung-riscv/blob/bbbb74529401a022fe2fb028525a953a2d509fe5/Task03/Instruction13.png)
 #### 14. **Instruction: `addi sp, sp, 16`**
     - **Machine Code**: `01010113`
-
+![addi sp, sp, 16](https://github.com/RohitJ1204/samsung-riscv/blob/bbbb74529401a022fe2fb028525a953a2d509fe5/Task03/Instruction14.png)
 #### 15. **Instruction: `ret`**
     - **Machine Code**: `00008067`
-
+![ret)](https://github.com/RohitJ1204/samsung-riscv/blob/bbbb74529401a022fe2fb028525a953a2d509fe5/Task03/Instruction15.png)
 | **Address** | **Instruction Code** | **Mnemonic**       | **Description**                 | **Type** | **Machine Code** |
 |-------------|-----------------------|--------------------|---------------------------------|----------|------------------|
 | `10184`     | `ff010113`           | `addi sp,sp,-16`   | Add immediate to stack pointer | I        | `ff010113`       |
