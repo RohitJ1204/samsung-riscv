@@ -7,6 +7,74 @@ The RISC-V instructions are categorized into types based on their field organiza
 - **B-type**: Branch type
 - **U-type**: Upper immediate type
 - **J-type**: Jump type
+
+**1. R-type (Register-Register)**
+
+* **Format:** `[funct7] rs2 rs1 funct3 rd opcode`
+* **Description:** Used for register-to-register operations, such as addition, subtraction, and logical operations.
+* **Fields:**
+    - `funct7` (7 bits): Specifies the high-order bits of the operation.
+    - `rs2` (5 bits): Source register 2.
+    - `rs1` (5 bits): Source register 1.
+    - `funct3` (3 bits): Specifies the low-order bits of the operation.
+    - `rd` (5 bits): Destination register.
+    - `opcode` (7 bits): Specifies the instruction type (R-type).
+
+**2. I-type (Immediate)**
+
+* **Format:** `imm[11:0] rs1 funct3 rd opcode`
+* **Description:** Used for operations involving an immediate value, such as addition with an immediate, loads, and stores.
+* **Fields:**
+    - `imm[11:0]` (12 bits): Immediate value.
+    - `rs1` (5 bits): Source register.
+    - `funct3` (3 bits): Specifies the operation.
+    - `rd` (5 bits): Destination register.
+    - `opcode` (7 bits): Specifies the instruction type (I-type).
+
+**3. S-type (Store)**
+
+* **Format:** `imm[11:5] rs2 rs1 funct3 imm[4:0] opcode`
+* **Description:** Used for store instructions, such as `sb`, `sh`, and `sw`.
+* **Fields:**
+    - `imm[11:5]` (7 bits): High-order bits of the immediate offset.
+    - `rs2` (5 bits): Source register (value to be stored).
+    - `rs1` (5 bits): Base register.
+    - `funct3` (3 bits): Specifies the store operation (byte, halfword, word).
+    - `imm[4:0]` (5 bits): Low-order bits of the immediate offset.
+    - `opcode` (7 bits): Specifies the instruction type (S-type).
+
+**4. B-type (Branch)**
+
+* **Format:** `[12] imm[10:5] rs2 rs1 funct3 imm[4:1] [11] opcode`
+* **Description:** Used for branch instructions, such as `beq`, `bne`, `blt`, etc.
+* **Fields:**
+    - `imm[10:5]` (6 bits): High-order bits of the immediate offset.
+    - `rs2` (5 bits): Source register 2.
+    - `rs1` (5 bits): Source register 1.
+    - `funct3` (3 bits): Specifies the branch condition.
+    - `imm[4:1]` (4 bits): Low-order bits of the immediate offset.
+    - `[12]`, `[11]`: Sign bits for the immediate offset.
+    - `opcode` (7 bits): Specifies the instruction type (B-type).
+
+**5. J-type (Jump)**
+
+* **Format:** `[20] imm[10:1] [11] imm[19:12] rd opcode`
+* **Description:** Used for jump instructions, such as `jal` (jump and link).
+* **Fields:**
+    - `imm[19:12]` (8 bits): High-order bits of the immediate offset.
+    - `imm[10:1]` (10 bits): Low-order bits of the immediate offset.
+    - `[20]`, `[11]`: Sign bits for the immediate offset.
+    - `rd` (5 bits): Destination register (for `jal`, this is the return address register).
+    - `opcode` (7 bits): Specifies the instruction type (J-type).
+
+**6. U-type (Upper Immediate)**
+
+* **Format:** `imm[31:12] rd opcode`
+* **Description:** Used for instructions that load an immediate value into a register, such as `lui` (load upper immediate).
+* **Fields:**
+    - `imm[31:12]` (20 bits): Immediate value.
+    - `rd` (5 bits): Destination register.
+    - `opcode` (7 bits): Specifies the instruction type (U-type).
 ## Opcode and Function Fields
 - **Opcode**: Determines the type of instruction.
 - **func3** and **func7**: Further specify the operation within the instruction type.
@@ -108,6 +176,9 @@ The RISC-V instructions are categorized into types based on their field organiza
 #### 15. **Instruction: `ret`**
     - **Machine Code**: `00008067`
 ![ret)](https://github.com/RohitJ1204/samsung-riscv/blob/bbbb74529401a022fe2fb028525a953a2d509fe5/Task03/Instruction15.png)
+
+## Summary
+
 | **Address** | **Instruction Code** | **Mnemonic**       | **Description**                 | **Type** | **Machine Code** |
 |-------------|-----------------------|--------------------|---------------------------------|----------|------------------|
 | `10184`     | `ff010113`           | `addi sp,sp,-16`   | Add immediate to stack pointer | I        | `ff010113`       |
